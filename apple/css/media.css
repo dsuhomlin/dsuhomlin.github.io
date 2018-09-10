@@ -1,0 +1,176 @@
+ @media screen and (min-width: 992px) {
+	.menu-btn_active span {
+  		height: 2px;
+	}
+	.menu-btn_active span:before {
+  		 transform: translateY(-5px);
+	}
+	.menu-btn_active span:after {
+  		 transform: translateY(5px);
+	}
+	.menu-nav {
+		display: none;
+	}
+}
+@media screen and (max-width: 992px) {
+	.menu-btn{
+		display:block
+	}
+	.menu {
+		display: none !important;
+	}
+	.support-menu  {
+		display: none !important;
+	}
+	.header-link {
+		display: none;
+	}
+
+	.iphone-block {
+		display: none;
+	}
+	.iphone-features {
+		background: #F5F5F8;
+		padding: 0 0 30px 0;
+	}
+
+	.arcticmodal-container_i2 {
+		max-width: 500px;
+		margin: 0 auto;
+	}
+
+.iphone-features {
+    margin: 120px 0 20px 0;
+}
+.features-text {
+    padding: 100px 0 80px 0;
+}
+.map-features {
+    margin-bottom: 80px;
+}
+	.box-modal {
+    	width: 100%;
+	}
+	.world-map{
+		display:none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about-tomorrow__title {
+		left: 0;
+		margin-left: 0;
+		padding: 0 30px; 
+	}
+	h1 {
+		font-size: 3.000rem;
+	}
+	.features-block_pad {
+		padding: 20px 0 0 10px;
+	}
+	.world-map {
+		display: none;
+	}
+	.wrap-cards__advantages li,
+	.wrap-cards__advantages li:nth-child(2) {
+		background: url(../img/On-Icon.png) no-repeat left center;
+	}
+	.wrap-cards__advantages li,
+	.wrap-cards__advantages li:nth-child(3) {
+		max-width: 200px;
+		margin: 0 auto;
+	}
+	.copyrights {
+		display: none;
+	}
+	.footer-logo {
+		margin-left: 0 !important;
+	}
+}
+
+
+@media screen and (max-width: 480px) {
+	h1 {
+		font-size: 30px;
+	}
+	.protect-buttons {
+		flex-direction: column;
+	}
+	.protect-buttons__hack .fa-arrow-right {
+		left: 170px;
+		right: 0;
+	}
+	.protect-buttons__hack {
+		margin-bottom: 15px;
+	}
+	.partners__brand-logo {
+		display: block !important;
+	}
+	.brand-logo__item {
+		margin: 15px 0;
+	}
+
+	.buy-form  {
+		flex-direction: column;
+	}
+	.buy-form__btn {
+		margin: 20px auto 0 auto;
+	}
+	.buy-form__inp {
+		padding: 0 0 3px 25px;
+	}
+	.plan {
+		padding: 160px 0 500px 0;
+	}
+	.wrap-cards {
+		flex-direction: column;
+	}
+	.wrap-cards__item {
+		width: 100%;
+		padding: 29px 0 100px 0;
+	}
+	.cards-link {
+		bottom: -355px;
+	}
+	.subscribe-form {
+		flex-direction: column;
+	}
+	.subscribe-form__inp {
+		padding: 0 0 3px 25px;
+	}
+	.subscribe-form__btn {
+		margin: 20px auto 0 auto;
+	}
+	.footer-nav  {
+		display: none;
+	}
+}
+
+
+@media screen and (max-height: 840px) {
+	.iphone {
+		display: none;
+	}
+	.about-tomorrow__title {
+		bottom: 20%;
+	}
+	h1 {
+    	margin-bottom: 35px;
+	}
+	.about-tomorrow__title p {
+   		margin-bottom: 75px;
+	}
+}
+
+@media screen and (max-height: 480px) {
+	.about-tomorrow__title p {
+		display: none !important;
+	}
+	.about-tomorrow__title {
+		bottom: 15%;
+		width: 100%;
+	}
+	h1 {
+		margin-bottom: 65px;
+	}
+}

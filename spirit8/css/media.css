@@ -1,0 +1,127 @@
+@media (min-width:0) and (max-width: 400px) { 
+	.our-work__filter-buttons span{
+		display:none;
+	}
+	.our-work__filter-buttons{
+		display:flex;
+		flex-direction:column;
+		align-items:center;
+	}
+	.our-work__filter-buttons li{
+		margin-top:20px;
+	}
+
+}
+
+@media (min-width:400px) and (max-width: 480px) { 
+	.our-work__filter-title h3{
+		font-size:16px;
+	}
+	.our-work__filter-buttons li a{
+		font-size:15px;
+	}
+}
+
+
+@media (max-width: 575.98px) { 
+	.first-screen__title h1{
+		margin-top:150px;
+	}
+		.our-work__example{
+		text-align:center;
+	}
+	.our-work__example-hover{
+		left: 50%;
+		margin-left: -131px;
+	}
+}
+
+
+
+@media (max-width: 767.98px) { 
+	/*бургер-меню*/
+	.header__menu li{
+		display:none;
+	}
+	.header__menu-btn{
+		display:block;
+	}
+	.header__menu{
+		flex-direction:column;
+		position:absolute; /*чтобы бургер меню не двигало контент*/
+	}
+	.header__menu__active li{
+		display:block;
+		padding:13px;
+		background:black;
+		z-index:1;
+	}
+	/*---------*/
+	/*красота cамих li в бургер-меню*/
+	.header__menu li a:hover{
+		color:#fcac45;
+	}
+	.header__menu li a:after{
+		display:none; 
+	}
+/*-------------*/
+	.our-work__example{
+		text-align:center;
+	}
+	.our-work__example-hover{
+		left: 50%;
+		margin-left: -131px;
+	}
+
+	.about-us__title{
+		margin-top:60px;
+	}
+	
+	.footer-social{
+		display:none;
+	}
+
+		.header__logo{
+	text-align:center;
+}
+	.about-us__mac{
+		display:none;
+	}
+	.our-work__filter-buttons li{
+		margin-top:40px;
+	}
+
+ }
+
+@media (min-width:767.99px) and (max-width: 991.98px) { 
+	.header__logo{
+	text-align:center;
+}
+	.about-us__mac{
+		display:none;
+	}
+
+	.services-skills h3{
+		font-size:20px;
+	}
+.our-work__filter-buttons li{
+		margin-top:55px;
+	}
+}
+
+@media (max-width: 1199.98px) { 
+	.our-work__example{
+		text-align:center;
+	}
+	.our-work__example-hover{
+		left: 50%;
+		margin-left: -131px;
+	}
+
+	.about-us__info_button{
+	margin-bottom:70px;
+}
+	.about-us__title{
+		margin-top:60px;
+	}
+}

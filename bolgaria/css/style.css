@@ -1,0 +1,880 @@
+body {
+	font-family: 'MuseoSansCyrl', sans-serif;
+	font-size: 15px;
+	color:white;
+}
+
+ul, li {
+	display: block;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+
+* {
+	-moz-transition: all 0.3s ease;
+	-webkit-transition-property: all;
+	-webkit-transition-duration: 0.3s;
+	-webkit-transition-timing-function: ease;
+}
+
+a, a:hover, a:active, a:focus,
+button, input, button:hover, button:active, button:focus,
+input:focus, input:active {
+	text-decoration: none;
+	outline: none;
+}
+/*мобильное меню*/
+.header__mobile__menu {
+	display: none;
+}
+.nav {
+  width: 100%;
+  box-shadow: inset 0 5px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 100;
+  display: none;
+}
+.nav__item {
+  display: block;
+  height: 56px;
+  font-weight: bold;
+  color: #fff;
+  font-size: 14px;
+  line-height: 56px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: rgb(14,49,70,1);
+  transition: background-color 0.1s linear, color 0.1s linear;
+}
+.nav__item:not(:first-of-type) {
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.nav__item:not(:last-of-type) {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.nav__item:last-of-type {
+  box-shadow: inset 0 -5px 10px -5px rgba(0, 0, 0, 0.4);
+}
+.nav__item:hover {
+  background: #3e708c;
+}
+.nav__item:active {
+  background-color: #2768c1;
+  color: #fff;
+}
+.nav-burger {
+  display: block;
+  width: 25px;
+  height: 23px;
+  cursor: pointer;
+  color: transparent;
+  font-size: 0;
+  background: url("../img/burger.png") no-repeat;
+  position: absolute;
+  top: 25px;
+  right: 10%;
+  z-index: 1;
+}
+.nav-burger__checkbox {
+  display: none;
+}
+.nav-burger__checkbox:checked + .nav-burger {
+      background-image: url(../img/icon-cross.svg);
+}
+.nav-burger__checkbox:checked ~ .nav {
+  display: block;
+}
+/*-----------*/
+.container{
+	position:relative;
+}
+
+.bolder{
+	font-weight:900;
+}
+
+.black{
+	color:black;
+}
+
+/*Шапка*/
+
+header{
+background: url(../img/bg.png) no-repeat center fixed;
+background-size: cover;
+}
+
+.header{
+	height: 77px;
+	background: url(../img/header-bg.png) no-repeat center / cover;
+}
+
+.menu__item{
+	float:left;
+	padding-top:30px;
+}
+
+.menu__item a{
+	font-size:11px;
+	color:white;
+	font-weight:900;
+	border-radius: 3px;
+	padding: 11px 11px;
+}
+
+.menu__item a:hover {
+	background: #3f6477;
+}
+
+.contacts{
+	padding-top:20px;
+	padding-bottom:13px;	
+}
+
+.phone {
+	margin: 9px 15px 0 0;
+}
+
+.contacts__phone {
+	font-weight:900;
+	float: right;
+}
+
+.contacts__phone span{
+	display:block;	
+}
+
+
+/*первый экран*/
+
+.first__title h1{
+	padding-top:205px;
+	font-size:90px;
+	letter-spacing:35px;
+	display:block;
+}
+
+.first__title span{
+	display:block;
+	font-size:51px;
+	letter-spacing:10px;
+	padding-top:40px;
+}
+
+.first__arrow{
+	padding-top:155px;
+	margin-bottom:100px;
+}
+
+/*Преимущества*/
+#advantages{
+	padding-bottom:95px;
+	overflow:hidden;
+}
+
+#advantages h2{
+ letter-spacing:4px;
+ margin-top:90px;
+ font-size:42px;
+}
+
+.advatages__item{
+	background:#f4f4f4;
+	height:420px;
+	margin-top:65px;
+	text-align:center;
+	padding-top:60px;
+}
+
+.advatages__item:hover{
+	box-shadow: 12px 12px 54px rgba(0,0,0,0.45);
+}
+
+.advatages__item h3{
+	font-size:20px;
+	font-weight:700;
+	padding-top:25px;
+}
+
+.advatages__item h3:after{
+	background: url(../img/advantages_line.png) no-repeat center;
+	content:'';
+	display:block;
+	height:1px;
+	width:38px;
+	margin:0 auto;
+	margin-top:18px;
+}
+
+.advatages__item:hover h3:after{
+	background: #ffa000;
+	width: 70px;
+	transition: all 0.5s ease;
+}
+
+.advantages__text{
+	margin-top:20px;
+	padding:0 30px;
+	font-size:17px;
+}
+/*Переезд в Болгарию*/
+#movebolgaria{
+	background: url(../img/move-bg.png) no-repeat center fixed;
+	background-size: cover;
+}
+
+#movebolgaria h2{
+	margin-top:95px;
+	font-size:42px;
+	letter-spacing:4px;
+
+}
+
+.title_lower{
+	font-style: italic; 
+	color:#CACED1;
+	font-size:18px;
+	padding-top:30px;
+}
+
+.title_lower span{ 
+	display:block;
+	font-size:14px;
+	padding-top:15px;
+	color:white;
+	font-style:normal;
+}
+
+.movebolgaria__border{
+	border:1px dashed;
+	font-size:19px;
+	color:#CACED1;
+	margin-top:60px;
+	padding:60px 0;
+	letter-spacing:1px;
+	position:relative;
+}
+
+.movebolgaria__border:before{
+	background: url(../img/border-dashed.png) no-repeat center;
+	content:'';
+	display:block;
+	width:35px;
+	height:35px;
+	position:absolute;
+	left:50%;
+	margin-left:-15px;
+	margin-top:-77px;
+}
+
+.movebolgaria__border:after{
+	background: url(../img/border-dashed.png) no-repeat center;
+	content:'';
+	display:block;
+	width:35px;
+	height:35px;
+	position:absolute;
+	left:50%;
+	margin-left:-15px;
+	margin-top:43px;
+}
+
+.movebolgaria__border span{
+	font-size:23px;
+	display:block;
+	color:white;
+	font-weight:900;
+	letter-spacing:2px;
+}
+
+.movebolgaria__answer h2{
+	font-size:37px;
+}
+
+.movebolgaria__answer__text{
+	font-size:18px;
+	color:#CACED1;
+	letter-spacing:1px;
+}
+
+.movebolgaria__answer__button{
+	margin-top:70px;
+	padding-bottom:95px;
+}
+
+.movebolgaria__answer__button a{
+	border:2px solid;
+	border-radius:5px;
+	padding:20px 30px;
+	color:white;
+}
+
+.movebolgaria__answer__button a:hover {
+	color: #23aae2;
+	border: 2px solid #23aae2;
+}
+/*Недвижимость и транспортные услуги*/
+
+#property{
+	background: url(../img/property-bg.png) no-repeat center;
+	background-size:cover;
+}
+
+#property h2{
+	margin-top:108px;
+	letter-spacing:2px;
+}
+
+.property__img{
+	position:relative;
+}
+
+.property__img__item{
+	float:left;
+	position:absolute;
+}
+
+.property__img__item:nth-child(1){
+	z-index:1;
+	left:20px;
+	right:0;
+	top:80px;
+	bottom:0;
+	margin:auto;
+}
+.property__img__item:nth-child(2){
+	z-index:3;
+	left:80px;
+	right:0;
+	top:0;
+	bottom:50px;
+	margin:auto;
+}
+.property__img__item:nth-child(3){
+	z-index:1;
+	left:190px;
+	right:0;
+	top:80px;
+	bottom:0;
+	margin:auto;
+}
+
+.property__text__top{
+	margin-top:140px;
+	background:#f4f4f4;
+	padding: 0 0 45px 0;
+	z-index:2;
+	position:relative;
+}
+
+.property__text__top:hover{
+	-webkit-box-shadow: 0px 0px 26px 5px rgba(77,77,77,0.44);
+	-moz-box-shadow: 0px 0px 26px 5px rgba(77,77,77,0.44);
+	box-shadow: 0px 0px 26px 5px rgba(77,77,77,0.44);
+}
+
+.property__text__top h3{
+	padding-top:70px;
+	font-size:20px;
+}
+
+.property__text__top p{
+	padding:5px 70px;
+	text-align:center;
+	font-size:17px;
+}
+
+.property__text__top img{
+	position:absolute;
+		left: 46%;
+		top: 91%;
+}
+
+.property__text__down{
+	background:#f4f4f4;
+	margin-top:10px;
+}
+
+.property__text__down:hover{
+	-webkit-box-shadow: 0px 0px 26px 5px rgba(77,77,77,0.44);
+	-moz-box-shadow: 0px 0px 26px 5px rgba(77,77,77,0.44);
+	box-shadow: 0px 0px 26px 5px rgba(77,77,77,0.44);
+}
+
+.property__text__down p{
+	padding:45px 30px;
+	text-align:center;
+	font-size:17px;
+}
+
+.property__button{
+	margin-top:60px;
+	padding-bottom:100px;
+}
+.property__button a{
+	color:#23aae2;
+	border:2px solid;
+	border-radius:5px;
+	padding:20px 30px;
+}
+
+.property__button a:hover {
+	color: #fff;
+	background: #23aae2;
+}
+/*Отзывы наших клиентов*/
+#reviews{
+	padding-bottom:90px;
+}
+
+.reviews-title{
+	margin-top:90px;
+	letter-spacing:2px;
+}
+
+.reviews-clients{
+	margin-top:70px;
+	position:relative;
+
+}
+
+.reviews-clients__img{
+	top:40px;
+	left:1%;
+	right:0;
+	bottom:0;
+	margin:auto;
+	position:absolute;
+}
+
+.reviews-clients__title{
+	color:#46b5e5;
+	font-size:12px;
+	padding-top:45px;
+}
+
+.reviews-clients__title span{
+	font-size:16px;
+	margin-left:160px;
+	color:black;
+	padding-right:40px;
+}
+
+.reviews-clients__title a{
+	color:#46b5e5;
+	text-decoration:underline;
+	padding-right:140px;
+}
+
+.reviews-clients__text{
+	color:black;
+	font-style:italic;
+	padding:20px 50px 15px 160px;
+	letter-spacing:1px;
+}
+
+.indicators__cirls {
+	margin: 40px 330px 0 330px;
+	width:100px;
+}
+
+.indicators__cirls__item {
+	width: 17px;
+	height: 17px;
+	border: 1px dashed #23aae2;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.indicators__cirls__item{
+	float:left;
+}
+
+.indicators__cirls__item:nth-child(2) {
+	background: #23aae2;
+}
+
+.indicators__cirls__item:nth-child(3) {
+	margin-right: 0;
+}
+
+/*Форма*/
+#confuse{
+	background: url(../img/confuse-bg.png) no-repeat center / cover;
+	-webkit-box-shadow: inset 0px 5px 125px -27px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 5px 125px -27px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 5px 125px -27px rgba(0,0,0,0.75);
+}
+
+.confuse-title h2{
+	margin-top:85px;
+	letter-spacing:2px;
+	font-size:42px;
+}
+
+.confuse-title span{
+	display:block;
+}
+
+.confuse-title__lower{
+	font-size:21px;
+	letter-spacing:2px;
+	margin-top:25px;
+}
+
+.confuse-title__img{
+	margin-top:35px;
+}
+
+.form{
+	margin-top:25px;
+	padding-bottom:85px;
+}
+
+.form__item{
+	width:100%;
+	height:65px;
+	padding-left:35px;
+	background-color:#30c2ff;
+	border: 1px solid white;
+	border-radius:4px;
+	margin-bottom:10px;
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+
+.form__item:hover{
+box-shadow: 0px 6px 49px -15px rgba(0,0,0,0.74);
+color:white;
+}
+
+.form__button{
+	width:100%;
+	height:65px;
+	background-color: transparent;
+	color:white;
+	font-weight:900;
+	border: 2px solid white;
+	border-radius:4px;
+	margin-top:10px;
+	letter-spacing:1px;
+}
+
+.form__button:hover{
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.5);
+}
+
+/*футер*/
+
+#footer{
+	background:#23AAE2;
+}
+.footer-logo{
+	padding-top:13px;
+}
+
+.footer-rights{
+	padding-top:41px;
+}
+
+.footer-confid{
+	padding-top:41px;
+	text-decoration:underline dotted;
+}
+
+.footer-contacts{
+	padding-top:30px;
+	padding-bottom:20px;
+	float:right;
+}
+
+.footer-contacts__phone{
+	font-weight:900;
+}
+
+.footer-contacts__img{
+	position:absolute;
+	top:40px;
+	left:75px;
+}
+/*-------------------------------------*/
+
+/*ВЕБ-СТРАНИЦА КОНТАКТЫ*/
+
+
+.phone {
+	margin: 9px 15px 0 0;
+}
+
+.contacts__tel {
+	font-weight:900;
+	float: right;
+}
+
+.contacts__tel span{
+	display:block;
+	padding-top:10px;
+	text-decoration:underline dashed;
+}
+
+.contacts__title{
+	font-size:51px;
+	letter-spacing:14px;
+	margin-top:80px;
+}
+
+.contacts__arrow{
+	margin-top:40px;
+	padding-bottom:130px;
+}
+
+/* секция contacts-info*/
+
+.contacts-social{
+	margin-top:-80px;
+	background:white;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	padding-bottom:60px;
+	margin-bottom:85px;
+}
+
+.contacts-social__title{
+	padding-top:55px;
+}
+
+.contacts-social__media{
+	margin-top:135px;
+}
+
+.contacts-social__media_item{
+	color:black;
+	padding-left: 60px;
+	margin-top: 50px;
+}
+
+.contacts-social__media_item h4{
+	font-size:18px;
+	font-weight:900;
+	text-transform: uppercase;
+}
+
+.contacts-social__media_item span{
+	font-size:16px;
+	display:block;
+}
+
+.contacts-social__media_item:nth-child(1){
+	background:url(../img/Phone-logo.png) no-repeat left top;
+}
+.contacts-social__media_item:nth-child(2){
+ background:url(../img/Email-logo.png) no-repeat left top;
+}
+.contacts-social__media_item:nth-child(3){
+ background:url(../img/Skype-logo.png) no-repeat left top;
+}
+
+.contacts-social__form{
+	background:#11B2F5;
+	padding-bottom:25px;
+	margin-top:60px;
+}
+
+.contacts-social__form__title{
+	padding-top:40px;
+	letter-spacing:1px;
+}
+
+.contacts-social__form__title h3{
+font-size:25px;
+font-weight:900;
+}
+
+.contacts-social__form__title span{
+display:block;
+font-weight:100;
+font-size:18px;
+}
+
+.contacts__form{
+	padding-top:30px;
+	padding-left:60px;
+}
+
+.contacts__form_item{
+	width:80%;
+	height:50px;
+	padding-left:35px;
+	background-color:#30c2ff;
+	border: 1px solid white;
+	border-radius:4px;
+	margin-bottom:10px;
+	color:white;
+	text-transform:uppercase;
+	letter-spacing:1px;
+}
+.contacts__form_item:hover{
+box-shadow: 0px 6px 49px -15px rgba(0,0,0,0.74);
+}
+
+.contacts__form_button{
+	width:80%;
+	height:50px;
+	background-color: transparent;
+	color:white;
+	font-weight:900;
+	border: 2px solid white;
+	border-radius:4px;
+	margin-top:15px;
+	letter-spacing:1px;
+}
+.contacts__form_button:hover{
+	box-shadow: inset 0 0 30px rgba(0,0,0,0.5);
+}
+
+/*------------------------*/
+
+/*Cтраница НЕДВИЖИМОСТЬ*/
+.property-page__block{
+	margin-top:-80px;
+	background:white;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	padding-bottom:60px;
+	margin-bottom:85px;
+}
+
+.property-page__title span{
+	display:block;
+	font-weight:900;
+}
+
+.property-page__title{
+	padding-top:45px;
+}
+
+.property-page__house-text{
+	padding-top:90px;
+}
+
+.property-page__house{
+	padding-top:55px;
+}
+
+.property-page__package-text{
+	padding-top:105px;
+}
+
+.property-page__package{
+	padding-top:50px;
+}
+
+/*------------------------*/
+
+/*Cтраница О КОМПАНИИ*/
+
+.about-page__block{
+	margin-top:-80px;
+	background:white;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+	padding-bottom:60px;
+	margin-bottom:85px;
+}
+
+.about-page__title{
+	padding:52px 0 65px 0;
+}
+
+.about-page__clients h3{
+	color:#23AAE2;
+	letter-spacing:2px;
+	font-size:39px;
+	font-weight:900;
+}
+
+.about-page__clients span{
+	color:black;
+	display:block;
+	font-weight:900;
+	margin-top:-5px;
+}
+
+.about-page__had{
+	color:gray;
+	font-size:19px;
+	letter-spacing:7px;
+	padding-top:22px;
+	padding-left:45px;
+}
+
+.about-page__new-house h3{
+	color:#23AAE2;
+	letter-spacing:2px;
+	font-size:30px;
+	font-weight:900;
+}
+
+.about-page__new-house span{
+	color:black;
+	display:block;
+	font-weight:900;
+	margin-top:-12px;
+	letter-spacing:3px;
+	font-size:30px;
+}
+
+.about-page__blue-line{
+	background:#23AAE2;
+	margin-top:60px;
+	font-size:23px;
+	padding:30px 0;
+	letter-spacing:2px;
+}
+
+.about-page__partners{
+	margin-top:65px;
+}
+
+.about-page__card{
+	margin-top:55px;
+	background:#f4f4f4;
+	height:610px;
+	box-shadow: 0 0 5px rgba(0,0,0,0.5);
+}
+
+.about-page__card h3{
+	font-size:21px;
+	padding-top:30px;
+}
+
+.about-page__card h3:after{
+	background: url(../img/advantages_line.png) no-repeat center;
+	content:'';
+	display:block;
+	height:1px;
+	width:38px;
+	margin:0 auto;
+	margin-top:18px;
+}
+
+.about-page__card:hover{
+		box-shadow: 12px 12px 54px rgba(0,0,0,0.45);
+}
+
+.about-page__card:hover h3:after{
+	background: #ffa000;
+	width: 70px;
+	transition: all 0.5s ease;
+}
+
+.about-pade__card-image{
+	padding-top:20px;
+	text-align:center;
+}
+
+.about-page__card-text{
+	padding:5px 35px;
+	text-align:justify;
+}

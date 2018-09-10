@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'Natasha';
+    src: url('fonts/Natasha.eot');
+    src: url('fonts/Natasha.eot') format('embedded-opentype'),
+         url('fonts/Natasha.woff2') format('woff2'),
+         url('fonts/Natasha.woff') format('woff'),
+         url('fonts/Natasha.ttf') format('truetype'),
+         url('fonts/Natasha.svg#Natasha') format('svg');
+}

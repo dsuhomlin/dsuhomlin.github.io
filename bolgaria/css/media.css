@@ -1,0 +1,267 @@
+@media screen and (max-width: 1024px) {
+	/*МОБИЛЬНОЕ МЕНЮ*/
+.header__mobile__menu {
+		display: inline;
+	}
+/*-------------*/
+.contacts__phone{
+	display:none;
+}
+.phone{
+	display:none;
+}
+
+.first__title h1{
+	font-size:64px;
+}
+.first__title span{
+	font-size: 44px;
+}
+
+.property__text__top img{
+	left:46%;
+	top:94%;
+}
+.contacts__phone {
+	font-size: 14px;
+}
+.property__img__item:nth-child(1){
+	left: 5%;
+	right:0;
+	top:80px;
+	bottom:0;
+	margin:auto;
+}
+.property__img__item:nth-child(2){
+	left: 25%;
+	right:0;
+	top:0;
+	bottom:50px;
+	margin:auto;
+}
+.property__img__item:nth-child(3){
+	left: 65%;
+	right:0;
+	top:80px;
+	bottom:0;
+	margin:auto;
+}
+/*.reviews-clients__img{                    СЛАЙДЕР КОТОРЫЙ ВПДАЛУ АДАПТИРОВАТЬ))
+	top:25%;
+	left:-5%;
+}
+.reviews-clients:after{
+	background: url(../img/left-arrow.png) no-repeat;
+	left:-20%;
+	top:45%;
+
+}
+.reviews-clients:before{
+left:110%;
+top:47%;
+}*/
+#reviews{
+	display:none;
+}
+/*МЕДИА-ЗАПРОСЫ ДЛЯ КОНТАКТОВ*/
+.contacts-social{
+	padding-bottom:0;
+}
+
+.contacts-social__media{
+	text-align:center;
+}
+
+.contacts-social__media_item:nth-child(1){
+	background:url(../img/Phone-logo.png) no-repeat 230px;
+}
+.contacts-social__media_item:nth-child(2){
+ background:url(../img/Email-logo.png) no-repeat 230px;
+}
+.contacts-social__media_item:nth-child(3){
+ background:url(../img/Skype-logo.png) no-repeat 230px;
+}
+
+.contacts__form_item{
+	width:90%;
+}
+
+.contacts__form_button{
+	width:90%;
+}
+
+/*МЕДИА-ЗАПРОСЫ ДЛЯ НЕДВИЖИМОСТИ*/
+.property-page__house-text{
+	text-align:center;
+	padding:30px 15px 0 15px;
+}
+
+.property-page__house{
+	text-align:center;
+}
+
+.property-page__package-text{
+	text-align:center;
+	padding:30px 15px 0 15px;	
+}
+
+.property-page__package{
+	text-align:center;
+}
+/*МЕДА-ЗАПРОСЫ ДЛЯ О КОМПАНИИ*/
+.about-page__block{
+	padding:0;
+}
+
+.about-page__clients{
+	text-align:center;
+}
+
+.about-page__had{
+	text-align:center;
+	padding:20px 0;
+}
+
+.about-page__new-house{
+	text-align:center;
+}
+
+.about-page__card{
+	height:450px;
+}
+
+}
+
+
+@media screen and (max-width: 724px) { 
+
+.first__title h1 {
+	font-size: 47px;
+	letter-spacing:25px;
+}
+.first__title span{ 
+	font-size: 33px;
+}
+.property__img__item:nth-child(1){
+	left: 20%;
+	right:0;
+	top:80px;
+	bottom:0;
+	margin:auto;
+}
+.property__img__item:nth-child(2){
+left: 33%;
+	right:0;
+	top:0;
+	bottom:50px;
+	margin:auto;
+}
+.property__img__item:nth-child(3){
+	left: 55%;
+	right:0;
+	top:80px;
+	bottom:0;
+	margin:auto;
+}
+.property__text__top img{
+	left:44%;
+	top:94%;
+}
+/*МЕДИА-ЗАПРОСЫ ДЛЯ КОНТАКТОВ*/
+.contacts-social__media_item:nth-child(1){
+	background:url(../img/Phone-logo.png) no-repeat 140px;
+}
+.contacts-social__media_item:nth-child(2){
+ background:url(../img/Email-logo.png) no-repeat 140px;
+}
+.contacts-social__media_item:nth-child(3){
+ background:url(../img/Skype-logo.png) no-repeat 140px;
+}
+
+.about-page__card{
+	height:500px;
+}
+
+}
+
+@media screen and (max-width: 480px) { 
+#advantages h2{
+ font-size:25px;
+}
+
+#property h2{
+	font-size:25px;
+}
+
+#movebolgaria h2{
+	font-size:25px;
+}
+
+.contacts__title h1{
+	font-size:21px;
+	overflow:hidden;
+}
+
+.property-page__package{
+	overflow:hidden;
+}
+
+.property-page__house{
+	overflow:hidden;
+}
+
+.confuse-title h2{
+	font-size:25px;
+}
+
+.first__title h1 {
+	font-size: 25px;
+	letter-spacing:17px;
+	padding-top:50%;
+}
+.first__arrow{
+	padding-top:30%;
+}
+.first__title span{
+	font-size: 15px;
+}
+.property__text__top img{
+	left:44%;
+	top:94%;
+}
+.property__img__item:nth-child(1){
+left: 15%;
+	right:0;
+	top:80px;
+	bottom:0;
+	margin:auto;
+}
+.property__img__item:nth-child(2){
+left: 26%;
+	right:0;
+	top:0;
+	bottom:50px;
+	margin:auto;
+}
+.property__img__item:nth-child(3){
+	left: 50%;
+	right:0;
+	top:80px;
+	bottom:0;
+	margin:auto;
+}
+/*МЕДИА-ЗАПРОСЫ ДЛЯ КОНТАКТОВ*/
+.contacts-social__media_item:nth-child(1){
+	background:url(../img/Phone-logo.png) no-repeat 20%;
+}
+.contacts-social__media_item:nth-child(2){
+ background:url(../img/Email-logo.png) no-repeat 20%;
+}
+.contacts-social__media_item:nth-child(3){
+ background:url(../img/Skype-logo.png) no-repeat 20%;
+}
+
+.about-page__card{
+	height:95%;
+}
+} 
